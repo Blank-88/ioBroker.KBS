@@ -1,0 +1,98 @@
+{
+	"common": {
+		"name": "kbs",
+		"version": "0.0.1",
+		"news": {
+			"0.0.1": {
+				"en": "initial release",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"zh-cn": "首次出版"
+			}
+		},
+		"title": "Knowledge-Based Systems Template",
+		"titleLang": {
+			"en": "Knowledge-Based Systems Template",
+			"de": "Vorlage für wissensbasierte Systeme",
+			"ru": "Шаблон, основанный на знаниях",
+			"pt": "Modelo de sistemas baseados no conhecimento",
+			"nl": "Op kennis gebaseerde systeemsjabloon",
+			"fr": "Modèle de systèmes basés sur les connaissances",
+			"it": "Modello di sistemi basati sulla conoscenza",
+			"es": "Plantilla de sistemas basados ​​en el conocimiento",
+			"pl": "Szablon systemów opartych na wiedzy",
+			"zh-cn": "基于知识的系统模板"
+		},
+		"desc": {
+			"en": "This is an adapter template for the knowledge-based systems course.",
+			"de": "Dies ist eine Adaptervorlage für den Kurs Wissensbasierte Systeme.",
+			"ru": "Это шаблон адаптера для курса по системам, основанным на знаниях.",
+			"pt": "Este é um modelo de adaptador para o curso de sistemas baseados em conhecimento.",
+			"nl": "Dit is een adaptersjabloon voor de cursus op kennis gebaseerde systemen.",
+			"fr": "Il s'agit d'un modèle d'adaptateur pour le cours sur les systèmes basés sur les connaissances.",
+			"it": "Questo è un modello di adattatore per il corso di sistemi basati sulla conoscenza.",
+			"es": "Esta es una plantilla de adaptador para el curso de sistemas basados ​​en conocimiento.",
+			"pl": "Jest to szablon adaptera do kursu systemów opartych na wiedzy.",
+			"zh-cn": "这是基于知识的系统课程的适配器模板。"
+		},
+		"authors": [
+			"Blank-88 <h.heidtmann96@gmail.com>"
+		],
+		"keywords": [
+			"kbs",
+			"template"
+		],
+		"license": "MIT",
+		"platform": "Javascript/Node.js",
+		"main": "main.js",
+		"icon": "kbs.png",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/Blank-88/ioBroker.kbs/master/admin/kbs.png",
+		"readme": "https://github.com/Blank-88/ioBroker.kbs/blob/master/README.md",
+		"loglevel": "info",
+		"mode": "subscribe",
+		"type": "logic",
+		"compact": true,
+		"materialize": true,
+		"supportCustoms": true,
+		"dependencies": [
+			{
+				"js-controller": ">=1.4.2"
+			}
+		]
+	},
+	"native": {
+		"option1": true,
+		"option2": "42"
+	},
+	"objects": [],
+	"instanceObjects": [
+		{
+			"_id": "info",
+			"type": "channel",
+			"common": {
+				"name": "Information"
+			},
+			"native": {}
+		},
+		{
+			"_id": "info.connection",
+			"type": "state",
+			"common": {
+				"role": "indicator.connected",
+				"name": "Device or service connected",
+				"type": "boolean",
+				"read": true,
+				"write": false,
+				"def": false
+			},
+			"native": {}
+		}
+	]
+}
